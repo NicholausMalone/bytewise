@@ -11,6 +11,8 @@ set(SOURCE_FILES bytewise.c)
 # Add source to this project's executable.
 add_executable (bytewise ${SOURCE_FILES})
 
+#add_library(bytewise SHARED ${SOURCE_FILES})
+
 # Set startup project for Visual Studio
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT bar)
 
